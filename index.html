@@ -453,49 +453,6 @@
             z-index: 2;
         }
 
-        .open-status-badge {
-            position: absolute;
-            top: 14px;
-            left: 14px;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            /* tighter spacing */
-            padding: 5px 10px;
-            /* smaller badge */
-            background: rgba(10, 15, 12, 0.9);
-            border: 1px solid var(--primary);
-            border-radius: 999px;
-            font-size: 0.5rem;
-            /* smaller text */
-            font-weight: 500;
-            color: var(--primary);
-            backdrop-filter: blur(8px);
-            z-index: 3;
-        }
-
-        .open-status-badge .status-dot {
-            width: 4px;
-            /* smaller dot */
-            height: 6px;
-            background: var(--primary);
-            border-radius: 50%;
-            animation: blink 1.8s ease-in-out infinite;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.35;
-            }
-        }
-
-
         .profile-frame {
             position: relative;
             width: 100%;
@@ -1038,18 +995,6 @@
             z-index: 1;
         }
 
-        .availability-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.8rem 1.5rem;
-            background: rgba(0, 255, 136, 0.1);
-            border: 1px solid var(--primary);
-            border-radius: 50px;
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-        }
-
         .status-dot {
             width: 8px;
             height: 8px;
@@ -1348,10 +1293,6 @@
                             onload="this.style.display='block'" onerror="this.style.display='none'">
 
                         <div class="profile-overlay"></div>
-                        <div class="open-status-badge">
-                            <span class="status-dot"></span>
-                            Open to Work
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1612,9 +1553,6 @@
                 <div class="section-header reveal">
                     <div class="section-tag">Let's Connect</div>
                     <h2>Get In Touch</h2>
-                    <p class="section-subtitle">
-                        Open to partnerships, collaborations, and new opportunities
-                    </p>
                 </div>
 
                 <div class="contact-grid">
@@ -1626,10 +1564,6 @@
 
                     <div class="contact-visual reveal">
                         <div class="contact-visual-content">
-                            <div class="availability-badge">
-                                <span class="status-dot"></span>
-                                Open for Opportunities
-                            </div>
                             <h3 style="font-family: 'Syne', sans-serif; margin-bottom: 1rem;">Let's Build Together</h3>
                             <p style="color: var(--text-dim); max-width: 300px; margin: 0 auto;">
                                 Interested in partnerships, integrations, or discussing Web3 opportunities?
@@ -1643,9 +1577,6 @@
 
         <footer>
             <div class="container">
-                <p style="margin-bottom: 1rem; color: var(--primary);">
-                    Open to partnerships, consulting, and Web3 BD roles.
-                </p>
                 <p>&copy; 2026 Arpit Singh Rajput. All rights reserved...</p>
             </div>
         </footer>
