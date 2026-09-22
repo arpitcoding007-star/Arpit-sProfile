@@ -1,0 +1,11 @@
+# Local tooling
+.claude/
+node_modules/
+.vercel/
+
+# OS noise
+Thumbs.db
+.DS_Store
+
+# Editor backups
+*.bak
