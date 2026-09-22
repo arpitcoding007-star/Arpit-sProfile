@@ -5,6 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arpit Singh Rajput - Web3 Partnerships & BD Leader</title>
+    <meta name="description"
+        content="Arpit Singh Rajput - strategic partnerships and business development leader bridging traditional finance and blockchain. 100+ partnerships, 2.5M+ community built across DeFi, payments and cross-chain infrastructure.">
+    <meta name="author" content="Arpit Singh Rajput">
+    <meta name="theme-color" content="#05050a">
+    <link rel="canonical" href="https://arpitsinghrajput.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arpitsinghrajput.com/">
+    <meta property="og:title" content="Arpit Singh Rajput - Web3 Partnerships & BD Leader">
+    <meta property="og:description"
+        content="Strategic partnerships and business development leader bridging traditional finance and blockchain ecosystems.">
+    <meta property="og:image" content="https://arpitsinghrajput.com/assets/img/arpit-pics.png">
+    <meta property="og:image:alt" content="Portrait of Arpit Singh Rajput">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arpit Singh Rajput - Web3 Partnerships & BD Leader">
+    <meta name="twitter:description"
+        content="Strategic partnerships and business development leader bridging traditional finance and blockchain ecosystems.">
+    <meta name="twitter:image" content="https://arpitsinghrajput.com/assets/img/arpit-pics.png">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20100%20100'%3E%3Crect%20width%3D'100'%20height%3D'100'%20rx%3D'22'%20fill%3D'%2305050a'%2F%3E%3Ctext%20x%3D'50'%20y%3D'68'%20font-family%3D'Verdana%2Csans-serif'%20font-size%3D'46'%20font-weight%3D'bold'%20fill%3D'%2300ff88'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3C%2Fsvg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
         rel="stylesheet">
@@ -42,6 +68,87 @@
         .skill-category:hover,
         .education-card:hover {
             box-shadow: 0 0 30px var(--accent-glow);
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 1rem;
+            top: -100px;
+            z-index: 1000;
+            padding: 0.75rem 1.25rem;
+            background: var(--primary);
+            color: var(--darker);
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: top 0.2s ease;
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+        }
+
+        /* Visible keyboard focus for every interactive element */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        /* Hamburger (shown below 968px, see media query) */
+        .nav-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            background: transparent;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: var(--primary);
+            transition: transform 0.3s ease, opacity 0.2s ease;
+        }
+
+        .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* Respect users who ask for less motion */
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
         }
 
         #scroll-progress {
@@ -381,6 +488,7 @@
         header {
             padding: 2rem 0;
             position: sticky;
+            /* anchors the mobile nav panel */
             top: 0;
             background: rgba(5, 5, 10, 0.8);
             backdrop-filter: blur(20px);
@@ -395,6 +503,7 @@
         }
 
         .logo {
+            text-decoration: none;
             font-family: 'Syne', sans-serif;
             font-size: 1.5rem;
             font-weight: 800;
@@ -483,17 +592,6 @@
             50% {
                 transform: translate(-50%, -50%) scale(1.2);
             }
-        }
-
-        .profile-img {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            overflow: hidden;
-            border: 3px solid var(--primary);
-            box-shadow: 0 0 50px var(--accent-glow);
-            animation: float 6s ease-in-out infinite;
         }
 
         .profile-frame img {
@@ -1060,8 +1158,36 @@
                 grid-template-columns: 1fr;
             }
 
+            .nav-toggle {
+                display: flex;
+            }
+
             nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                padding: 1rem 1.5rem 1.5rem;
+                background: rgba(5, 5, 10, 0.97);
+                backdrop-filter: blur(20px);
+                border-bottom: 1px solid rgba(0, 255, 136, 0.15);
                 display: none;
+            }
+
+            nav.open {
+                display: flex;
+            }
+
+            nav a {
+                margin-left: 0;
+                padding: 0.85rem 0;
+                font-size: 1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+
+            nav a:last-child {
+                border-bottom: none;
             }
 
             .hero-content {
@@ -1073,12 +1199,6 @@
                 height: 280px;
             }
 
-            .crypto-badges {
-                position: static;
-                flex-direction: row;
-                margin-top: 1rem;
-                justify-content: center;
-            }
         }
 
         @media (max-width: 640px) {
@@ -1101,94 +1221,6 @@
             }
         }
 
-        /* Testimonials */
-        .testimonials-slider {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-
-        .testimonial-track {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .testimonial-card {
-            min-width: 100%;
-            padding: 2rem;
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            text-align: center;
-        }
-
-        .testimonial-quote {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            font-style: italic;
-            color: var(--text);
-        }
-
-        .testimonial-author h4 {
-            color: var(--primary);
-            font-family: 'Syne', sans-serif;
-            margin-bottom: 0.5rem;
-        }
-
-        .testimonial-role {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-        }
-
-        .slider-controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .slider-btn {
-            background: rgba(0, 255, 136, 0.1);
-            border: 1px solid var(--primary);
-            color: var(--primary);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .slider-btn:hover {
-            background: var(--primary);
-            color: var(--dark);
-        }
-
-        .slider-dots {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .dot {
-            width: 8px;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .dot.active {
-            background: var(--primary);
-            transform: scale(1.2);
-        }
-
         /* Scroll reveal */
         .reveal {
             opacity: 0;
@@ -1204,6 +1236,8 @@
 </head>
 
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div id="scroll-progress"></div>
     <div class="bg-grid"></div>
     <div class="network-visual" id="networkVisual"></div>
     <div class="expertise-marquee">
@@ -1232,8 +1266,14 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">ASR</div>
-                <nav>
+                <a href="#main" class="logo" aria-label="Arpit Singh Rajput - home">ASR</a>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="site-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="site-nav" aria-label="Main">
                     <a href="#experience">Experience</a>
                     <a href="#skills">Skills</a>
                     <a href="#education">Education</a>
@@ -1243,11 +1283,11 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="main">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-tag"> Marketting & Business Development</div>
+                    <div class="hero-tag">Marketing &amp; Business Development</div>
                     <h1 data-cms-hero-name>
                         Arpit Singh<br>
                         <span class="gradient-text">Rajput</span>
@@ -1288,19 +1328,20 @@
                 </div>
 
                 <div class="hero-image">
-                    <div class="profile-frame">
-                        <img src="assets/img/arpit-pics.png" alt="Arpit Singh Rajput"
-                            onload="this.style.display='block'" onerror="this.style.display='none'">
+                    <div class="profile-container">
+                        <div class="profile-frame">
+                            <img src="assets/img/arpit-pics.png" alt="Portrait of Arpit Singh Rajput"
+                                width="600" height="600" decoding="async" fetchpriority="high"
+                                onerror="this.style.display='none'">
 
-                        <div class="profile-overlay"></div>
+                            <div class="profile-overlay"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        </div>
-        </div>
     </section>
+
     <section id="career-timeline">
         <div class="container">
             <div class="timeline-wrapper reveal">
@@ -1380,7 +1421,7 @@
                         Strategic Impact (Post-Promotion)
                     </h4>
 
-                    <ul class="achievements">
+                    <ul class="achievements" data-cms-kima-strategic>
                         <li>Led end-to-end business development strategy, identifying, onboarding, and managing
                             strategic partners across Web2 and Web3 ecosystems.</li>
                         <li>Secured 100+ strategic partnerships that expanded market presence and accelerated business
@@ -1483,6 +1524,8 @@
             </ul>
         </div>
 
+    </section>
+
         <section id="skills">
             <div class="container">
                 <div class="section-header reveal">
@@ -1577,7 +1620,7 @@
 
         <footer>
             <div class="container">
-                <p>&copy; 2026 Arpit Singh Rajput. All rights reserved...</p>
+                <p>&copy; <span id="footer-year">2026</span> Arpit Singh Rajput. All rights reserved.</p>
             </div>
         </footer>
 
@@ -1634,8 +1677,7 @@
                     }
 
                     // Kima Strategic
-                    // Note: You might need to add a data attribute to the Strategic Impact list in HTML if not present
-                    const stratList = document.querySelectorAll('.achievements')[1]; // Fragile selector, better add ID/data attr
+                    const stratList = document.querySelector('[data-cms-kima-strategic]');
                     if (stratList && data.experience && data.experience.kima_strategic_bullets) {
                         stratList.innerHTML = data.experience.kima_strategic_bullets
                             .map(item => `<li>${item}</li>`).join('');
@@ -1749,52 +1791,31 @@
                 }
             });
 
-            // --- Testimonial Logic ---
-            let currentSlide = 0;
-            let totalSlides = 0;
-
-            function renderTestimonials(testimonials) {
-                const track = document.getElementById('testimonialTrack');
-                const dotsContainer = document.getElementById('sliderDots');
-
-                track.innerHTML = testimonials.map(t => `
-                <div class="testimonial-card">
-                    <p class="testimonial-quote">"${t.quote}"</p>
-                    <div class="testimonial-author">
-                        <h4>${t.name}</h4>
-                        <div class="testimonial-role">${t.role} at ${t.company}</div>
-                    </div>
-                </div>
-            `).join('');
-
-                totalSlides = testimonials.length;
-
-                // Create dots
-                dotsContainer.innerHTML = testimonials.map((_, i) =>
-                    `<div class="dot ${i === 0 ? 'active' : ''}" onclick="goToSlide(${i})"></div>`
-                ).join('');
-            }
-
-            function moveSlide(direction) {
-                currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-                updateSlider();
-            }
-
-            function goToSlide(index) {
-                currentSlide = index;
-                updateSlider();
-            }
-
-            function updateSlider() {
-                const track = document.getElementById('testimonialTrack');
-                track.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-                document.querySelectorAll('.dot').forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentSlide);
+            // Mobile navigation
+            const navToggle = document.querySelector('.nav-toggle');
+            const siteNav = document.getElementById('site-nav');
+            if (navToggle && siteNav) {
+                const setNav = (open) => {
+                    siteNav.classList.toggle('open', open);
+                    navToggle.setAttribute('aria-expanded', String(open));
+                    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+                };
+                navToggle.addEventListener('click', () => {
+                    setNav(navToggle.getAttribute('aria-expanded') !== 'true');
+                });
+                siteNav.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'A') setNav(false);
+                });
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') setNav(false);
                 });
             }
 
-            window.addEventListener('scroll', reveal);
+            // Keep the footer copyright current
+            const yearEl = document.getElementById('footer-year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            window.addEventListener('scroll', reveal, { passive: true });
             reveal(); // Check on load
 
             // Smooth scroll for anchor links
@@ -1816,8 +1837,10 @@
             window.addEventListener('scroll', () => {
                 let current = '';
                 sections.forEach(section => {
-                    const sectionTop = section.offsetTop - 120;
-                    if (pageYOffset >= sectionTop) {
+                    // getBoundingClientRect is relative to the viewport, so it stays
+                    // correct regardless of how the sections are nested.
+                    const sectionTop = section.getBoundingClientRect().top + window.scrollY - 120;
+                    if (window.scrollY >= sectionTop) {
                         current = section.getAttribute('id');
                     }
                 });
@@ -1829,12 +1852,14 @@
                     }
                 });
             });
+            const progressBar = document.getElementById('scroll-progress');
             window.addEventListener('scroll', () => {
+                if (!progressBar) return;
                 const scrollTop = document.documentElement.scrollTop;
                 const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                const progress = (scrollTop / scrollHeight) * 100;
-                document.getElementById('scroll-progress').style.width = progress + '%';
-            });
+                const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+                progressBar.style.width = progress + '%';
+            }, { passive: true });
         </script>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
