@@ -17,100 +17,117 @@ collections:
       - name: "content"
         label: "Home Page Content"
         file: "data/content.json"
-        description: "Edit the content of the home page"
+        description: "Everything on the home page. Plain text only; styling comes from the design."
         fields:
-          - label: "Hero Section"
+          - label: "01 Home"
             name: "hero"
             widget: "object"
             fields:
-              - { label: "Name Prefix", name: "name_prefix", widget: "string" }
-              - { label: "Name Highlight", name: "name_highlight", widget: "string" }
-              - { label: "Tagline", name: "tag", widget: "string" }
-              - { label: "Subtitle (HTML allowed)", name: "subtitle", widget: "markdown" }
-              - label: "Stats"
-                name: "stats"
-                widget: "object"
-                fields:
-                  - { label: "Years Experience", name: "years", widget: "string" }
-                  - { label: "Community Size", name: "community", widget: "string" }
-                  - { label: "Partnerships", name: "partnerships", widget: "string" }
-          
-          - label: "Experience Section"
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Focus line (shown on Journey)", name: "focus", widget: "string" }
+
+          - label: "Stats (inside the Journey circle)"
+            name: "stats"
+            widget: "list"
+            summary: "{{value}} {{label}}"
+            fields:
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+          - label: "02 Career timeline"
+            name: "journey"
+            widget: "list"
+            summary: "{{year}} {{label}}"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+          - label: "03 Experience"
             name: "experience"
             widget: "object"
             fields:
-              - label: "Kima Network Bullets"
-                name: "kima_bullets"
+              - label: "Current role (featured)"
+                name: "featured"
+                widget: "object"
+                fields:
+                  - { label: "Company", name: "company", widget: "string" }
+                  - { label: "Role", name: "role", widget: "string" }
+                  - { label: "Badge", name: "badge", widget: "string", required: false }
+                  - { label: "Badge tooltip", name: "badge_note", widget: "string", required: false }
+                  - { label: "Location", name: "location", widget: "string" }
+                  - { label: "Dates", name: "dates", widget: "string" }
+                  - { label: "Summary", name: "summary", widget: "text" }
+                  - { label: "Highlights", name: "highlights", widget: "list", field: { label: "Highlight", name: "text", widget: "string" } }
+                  - { label: "Circle heading", name: "strategic_title", widget: "string" }
+                  - { label: "Circle highlights (keep to three short lines)", name: "strategic", widget: "list", field: { label: "Line", name: "text", widget: "string" } }
+              - label: "Earlier roles"
+                name: "roles"
                 widget: "list"
-                min: 1
-                field: { label: "Bullet Point", name: "text", widget: "string" }
-              - label: "Kima Strategic Impact Bullets"
-                name: "kima_strategic_bullets"
-                widget: "list"
-                min: 1
-                field: { label: "Bullet Point", name: "text", widget: "string" }
-              - label: "Additional Experience Bullets"
-                name: "additional_bullets"
-                widget: "list"
-                min: 1
-                field: { label: "Bullet Point", name: "text", widget: "string" }
-              - label: "MultiFarm Experience Bullets"
-                name: "multifarm_bullets"
-                widget: "list"
-                min: 1
-                field: { label: "Bullet Point", name: "text", widget: "string" }
-              - label: "CrowdFundJunction Experience Bullets"
-                name: "crowdfund_bullets"
-                widget: "list"
-                min: 1
-                field: { label: "Bullet Point", name: "text", widget: "string" }
-              - label: "Mystery of Crypto Experience Bullets"
-                name: "mystery_bullets"
-                widget: "list"
-                min: 1
-                field: { label: "Bullet Point", name: "text", widget: "string" }
+                summary: "{{company}}"
+                fields:
+                  - { label: "Company", name: "company", widget: "string" }
+                  - { label: "Note (location or context)", name: "note", widget: "string", required: false }
+                  - { label: "Role", name: "role", widget: "string" }
+                  - { label: "Dates", name: "dates", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string", required: false }
+                  - { label: "Highlights", name: "highlights", widget: "list", field: { label: "Highlight", name: "text", widget: "string" } }
 
-          - label: "Education Section"
+          - label: "04 Skills"
+            name: "skills"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Expertise (inside the circle)", name: "expertise", widget: "list", field: { label: "Area", name: "text", widget: "string" } }
+              - label: "Disciplines"
+                name: "categories"
+                widget: "list"
+                summary: "{{category}}"
+                fields:
+                  - { label: "Discipline", name: "category", widget: "string" }
+                  - { label: "Skills", name: "tags", widget: "list", field: { label: "Skill", name: "text", widget: "string" } }
+
+          - label: "Hobbies & interests"
+            name: "hobbies"
+            widget: "object"
+            fields:
+              - { label: "Intro", name: "intro", widget: "string" }
+              - { label: "Interests", name: "tags", widget: "list", field: { label: "Interest", name: "text", widget: "string" } }
+
+          - label: "05 Education"
             name: "education"
             widget: "object"
             fields:
-              - { label: "MCA Degree Title", name: "mca", widget: "string" }
-              - { label: "BCA Degree Title", name: "bca", widget: "string" }
-
-
-          - label: "Skills Section"
-            name: "skills"
-            widget: "list"
-            summary: "{{category}}"
-            fields:
-              - { label: "Category Name", name: "category", widget: "string" }
-              - label: "Tags"
-                name: "tags"
+              - label: "Circle feature"
+                name: "feature"
+                widget: "object"
+                fields:
+                  - { label: "Short title", name: "title", widget: "string" }
+                  - { label: "School", name: "school", widget: "string" }
+                  - { label: "Years", name: "years", widget: "string" }
+              - label: "Entries"
+                name: "entries"
                 widget: "list"
-                field: { label: "Tag", name: "text", widget: "string" }
+                summary: "{{degree}}"
+                fields:
+                  - { label: "Dates or place", name: "when", widget: "string" }
+                  - { label: "Degree", name: "degree", widget: "string" }
+                  - { label: "Field", name: "field", widget: "string", required: false }
+                  - { label: "School", name: "school", widget: "string" }
 
-          - label: "Hobbies Section"
-            name: "hobbies"
-            widget: "list"
-            summary: "{{category}}"
-            fields:
-              - { label: "Category Name", name: "category", widget: "string" }
-              - label: "Tags"
-                name: "tags"
-                widget: "list"
-                field: { label: "Tag", name: "text", widget: "string" }
-
-          - label: "Social Links"
-            name: "social_links"
+          - label: "06 Contact"
+            name: "contact"
             widget: "object"
             fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
               - { label: "Email Address", name: "email", widget: "string" }
               - label: "LinkedIn"
                 name: "linkedin"
                 widget: "object"
                 fields:
-                   - { label: "URL", name: "url", widget: "string" }
-                   - { label: "Display Text", name: "text", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Display Text", name: "text", widget: "string" }
               - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }
               - { label: "Telegram Handle", name: "telegram", widget: "string" }
               - { label: "Location", name: "location", widget: "string" }

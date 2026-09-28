@@ -1,171 +1,221 @@
 {
   "hero": {
-    "name_prefix": "Arpit Singh",
-    "name_highlight": "Rajput",
-    "tag": "Marketing & Business Development Leader",
-    "subtitle": "<strong>Fintech | Blockchain | Payments | Stablecoins | Web 2 <—> Web3 Integration</strong><br><br>Strategic partnerships and business development leader bridging traditional finance and blockchain ecosystems. Currently driving Web2 and Web3 client acquisition, partnership integrations, and infrastructure expansion at KIMA Network. Expert in DeFi protocols, cross-chain solutions, and enterprise blockchain adoption with a track record of building 1M+ communities across multiple chains.",
-    "stats": {
-      "years": "8+",
-      "community": "2.5M+",
-      "partnerships": "100+"
-    }
+    "name": "Arpit Singh Rajput",
+    "tagline": "Bridging traditional finance and blockchain ecosystems.",
+    "focus": "Fintech | Blockchain | Payments | Stablecoins | Web 2 <—> Web3 Integration"
   },
+  "stats": [
+    { "value": "8+", "label": "Years experience" },
+    { "value": "2.5M+", "label": "Community built" },
+    { "value": "100+", "label": "Strategic partnerships" }
+  ],
+  "journey": [
+    { "year": "2019", "label": "Community & Crypto Content" },
+    { "year": "2022", "label": "Operations & DAO VC" },
+    { "year": "2024", "label": "Marketing & Growth" },
+    { "year": "2025", "label": "BD & Strategic Partnerships" }
+  ],
   "experience": {
-    "kima_bullets": [
-      "Promoted internally from Marketing & Community Management to Business Development based on performance and strategic impact.",
-      "Driving Web2 and Web3 client acquisition, onboarding, and integrations for KIMA’s cross-chain payment infrastructure.",
-      "Established and managed 100+ strategic partnerships across fintech, DeFi, and blockchain ecosystems.",
-      "Acting as a bridge between Web2 enterprises and Web3 protocols to enable seamless blockchain adoption.",
-      "Scaled and managed a 2.5M+ global community across multiple platforms.",
-      "Represented KIMA in demos, AMAs, conferences, and negotiations."
+    "featured": {
+      "company": "Kima Network",
+      "role": "Business Development Leader",
+      "badge": "Promotion",
+      "badge_note": "Promoted in Jan 2025",
+      "location": "Israel (Remote)",
+      "dates": "January 2024 – Present",
+      "summary": "Promoted internally from prior marketing role. Driving Web2 and Web3 client acquisition, onboarding, and integrations for KIMA's cross-chain payment infrastructure.",
+      "highlights": [
+        "Established 100+ partnerships",
+        "Scaled 2.5M+ community",
+        "Represented company at conferences/AMAs"
+      ],
+      "strategic_title": "Strategic impact highlights",
+      "strategic": [
+        "End-to-end partnership strategy",
+        "Partnerships across wallets, exchanges, infrastructure providers, dApps",
+        "Relationship-building with ecosystem leaders"
+      ]
+    },
+    "roles": [
+      {
+        "company": "MultiFarm.fi",
+        "note": "United Kingdom (Remote)",
+        "role": "Marketing Manager",
+        "dates": "June 2023 – January 2024",
+        "duration": "8 months",
+        "highlights": [
+          "Delivered 5+ DeFi products (Linea, zkSync, Scroll, Solana)",
+          "Built 100k+ community for HorizonDEX launch"
+        ]
+      },
+      {
+        "company": "CrowdFundJunction",
+        "note": "DAO VC · Singapore / New Delhi",
+        "role": "Head of Operations & Crypto Analyst",
+        "dates": "January 2022 – June 2023",
+        "duration": "1.5 years",
+        "highlights": [
+          "Crypto VC operations",
+          "Due diligence and investment analysis for Web3 startups",
+          "DAO governance management"
+        ]
+      },
+      {
+        "company": "Mystery of Crypto",
+        "note": "MoneyKing · Remote",
+        "role": "Community Manager & Content Creator",
+        "dates": "January 2019 – December 2021",
+        "duration": "3 years",
+        "highlights": [
+          "Community ecosystem management",
+          "Content creation",
+          "Partnership management"
+        ]
+      },
+      {
+        "company": "Digital Magazine",
+        "note": "Additional Web3 & freelance",
+        "role": "Publication & Advisory",
+        "dates": "2018 – Present",
+        "duration": "",
+        "highlights": [
+          "Crypto & NFT publication",
+          "Industry trend monitoring",
+          "Research and analysis"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "headline": "Comprehensive toolkit for Web3 success",
+    "expertise": [
+      "DeFi",
+      "Layer 2",
+      "Payments",
+      "Web3",
+      "Cross-Chain",
+      "Fintech",
+      "Infrastructure",
+      "RWA",
+      "Interoperability"
     ],
-    "kima_strategic_bullets": [
-      "Led end-to-end business development strategy, identifying, onboarding, and managing strategic partners across Web2 and Web3 ecosystems.",
-      "Secured 100+ strategic partnerships that expanded market presence and accelerated business growth.",
-      "Established partnerships across wallets, exchanges, infrastructure providers, dApps, payment processors, and ecosystem partners.",
-      "Built long-term relationships with founders, BD heads, and ecosystem leaders to unlock co-marketing and revenue opportunities."
-    ],
-    "multifarm_bullets": [
-      "Delivered and marketed 5+ DeFi products across Linea, zkSync, Scroll, and Solana.",
-      "Built 100k+ community within one month for HorizonDEX launch.",
-      "Executed go-to-market strategies for DeFi protocols and yield platforms."
-    ],
-    "crowdfund_bullets": [
-      "Led operations for a crypto-focused DAO VC investing across DeFi, Layer 1/2, NFTs, and Metaverse projects.",
-      "Conducted due diligence, market research, and investment analysis for early-stage Web3 startups.",
-      "Managed internal operations, reporting, and process optimization for DAO governance."
-    ],
-    "mystery_bullets": [
-      "Managed and nurtured vibrant community ecosystem with consistent active engagement.",
-      "Fostered genuine connections and cultivated sense of belonging among community members.",
-      "Excelled as content creator and partnership manager for crypto projects."
-    ],
-    "additional_bullets": [
-      "Led the publication of a digital magazine focused on Crypto & NFT, overseeing content creation, editing, and deep analytical reports.",
-      "Curated \"hidden gems\" and thought leadership content that served as a valuable resource for industry insights and project updates.",
-      "Enhanced organizational reputation and brand awareness through strategic marketing of digital publications.",
-      "Actively monitored industry trends, technological advancements, and regulatory developments in the Cryptocurrency and Web3 space.",
-      "Leveraged ongoing research and knowledge acquisition to ensure informed investment decisions and maintain a competitive edge."
+    "categories": [
+      {
+        "category": "Business Development",
+        "tags": [
+          "Client Acquisition",
+          "Partnership Development",
+          "Web2↔Web3 Integration",
+          "Strategic Negotiations",
+          "Go-to-Market Strategy",
+          "Relationship Management",
+          "B2B Sales",
+          "Deal Structuring"
+        ]
+      },
+      {
+        "category": "Blockchain & DeFi",
+        "tags": [
+          "DeFi Protocols",
+          "Liquid Staking",
+          "DEX Development",
+          "Yield Optimization",
+          "Smart Contracts",
+          "Cross-chain Solutions",
+          "Layer 1/2 Protocols",
+          "Payment Infrastructure"
+        ]
+      },
+      {
+        "category": "Analytics & Tools",
+        "tags": [
+          "Token Terminal",
+          "DeFiLlama",
+          "Dune Analytics",
+          "Onchain Analysis",
+          "Glassnode",
+          "CryptoFees",
+          "Messari",
+          "Technical Analysis"
+        ]
+      },
+      {
+        "category": "Community & Growth",
+        "tags": [
+          "Community Building",
+          "Growth Marketing",
+          "User Acquisition",
+          "Content Strategy",
+          "Social Media",
+          "Campaign Management",
+          "Engagement Strategy"
+        ]
+      },
+      {
+        "category": "Operations & Management",
+        "tags": [
+          "Project Management",
+          "Operations Leadership",
+          "Team Collaboration",
+          "Financial Modeling",
+          "Due Diligence",
+          "Strategic Planning",
+          "Market Research"
+        ]
+      },
+      {
+        "category": "Technical Knowledge",
+        "tags": [
+          "Blockchain Fundamentals",
+          "NFT Ecosystem",
+          "Tokenomics",
+          "X2E Models",
+          "Node Operations",
+          "Interoperability",
+          "Bridge Protocols"
+        ]
+      }
+    ]
+  },
+  "hobbies": {
+    "intro": "Activities that keep me engaged outside professional work.",
+    "tags": [
+      "Market Research",
+      "Protocol Analysis",
+      "Emerging Trends",
+      "Cricket"
     ]
   },
   "education": {
-    "mca": "Master of Computer Applications",
-    "bca": "Bachelor of Computer Applications"
+    "feature": {
+      "title": "MCA",
+      "school": "Amity University",
+      "years": "2018 — 2020"
+    },
+    "entries": [
+      {
+        "when": "August 2018 – June 2020",
+        "degree": "Master of Computer Applications (MCA)",
+        "field": "Computer Programming & Specific Applications",
+        "school": "Amity University"
+      },
+      {
+        "when": "2014 – 2017",
+        "degree": "Bachelor of Computer Applications (BCA)",
+        "field": "Computer Science",
+        "school": "Guru Gobind Singh Indraprastha University"
+      },
+      {
+        "when": "New Delhi",
+        "degree": "Intermediate of Science",
+        "field": "Science",
+        "school": "Delhi Jain Public School"
+      }
+    ]
   },
-  "testimonials": [
-    {
-      "name": "Alex Johnson",
-      "role": "CEO",
-      "company": "DeFi Protocol A",
-      "quote": "Arpit's strategic vision and network were instrumental in our successful launch. He bridges the gap between technical and business requirements effortlessly."
-    },
-    {
-      "name": "Sarah Lee",
-      "role": "Founder",
-      "company": "Fintech Solutions",
-      "quote": "Working with Arpit was a game-changer. His deep understanding of both Web2 and Web3 ecosystems helped us navigate complex partnerships with ease."
-    },
-    {
-      "name": "Tomer Warscher Nuni",
-      "role": "CMO",
-      "company": "Kima Network",
-      "quote": "Arpit Dedication to the work is phenominal and trustworthy team leader."
-    }
-  ],
-  "skills": [
-    {
-      "category": "Business Development",
-      "tags": [
-        "Client Acquisition",
-        "Partnership Development",
-        "Web2↔Web3 Integration",
-        "Strategic Negotiations",
-        "Go-to-Market Strategy",
-        "Relationship Management",
-        "B2B Sales",
-        "Deal Structuring"
-      ]
-    },
-    {
-      "category": "Blockchain & DeFi",
-      "tags": [
-        "DeFi Protocols",
-        "Liquid Staking",
-        "DEX Development",
-        "Yield Optimization",
-        "Smart Contracts",
-        "Cross-chain Solutions",
-        "Layer 1/2 Protocols",
-        "Payment Infrastructure"
-      ]
-    },
-    {
-      "category": "Analytics & Tools",
-      "tags": [
-        "Token Terminal",
-        "DeFiLlama",
-        "Dune Analytics",
-        "Onchain Analysis",
-        "Glassnode",
-        "CryptoFees",
-        "Messari",
-        "Technical Analysis"
-      ]
-    },
-    {
-      "category": "Community & Growth",
-      "tags": [
-        "Community Building",
-        "Growth Marketing",
-        "User Acquisition",
-        "Content Strategy",
-        "Social Media",
-        "Campaign Management",
-        "Engagement Strategy"
-      ]
-    },
-    {
-      "category": "Operations & Management",
-      "tags": [
-        "Project Management",
-        "Operations Leadership",
-        "Team Collaboration",
-        "Financial Modeling",
-        "Due Diligence",
-        "Strategic Planning",
-        "Market Research"
-      ]
-    },
-    {
-      "category": "Technical Knowledge",
-      "tags": [
-        "Blockchain Fundamentals",
-        "NFT Ecosystem",
-        "Tokenomics",
-        "X2E Models",
-        "Node Operations",
-        "Interoperability",
-        "Bridge Protocols"
-      ]
-    }
-  ],
-  "hobbies": [
-    {
-      "category": "Crypto & Web3",
-      "tags": [
-        "Market Research",
-        "Protocol Analysis",
-        "Emerging Trends"
-      ]
-    },
-    {
-      "category": "Sports",
-      "tags": [
-        "Cricket"
-      ]
-    }
-  ],
-  "social_links": {
+  "contact": {
+    "headline": "Let's build together",
+    "text": "Interested in partnerships, integrations, or discussing Web3 opportunities? Feel free to reach out through any channel.",
     "email": "arpitkumar9619@gmail.com",
     "linkedin": {
       "url": "https://www.linkedin.com/in/arpit-singh-rajput-a597bb164/",

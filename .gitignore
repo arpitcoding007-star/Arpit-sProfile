@@ -9,3 +9,6 @@ Thumbs.db
 
 # Editor backups
 *.bak
+
+# Full-resolution photo originals (100+ MB); web versions live in assets/img
+Pictures/

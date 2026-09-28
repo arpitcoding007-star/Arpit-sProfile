@@ -1,0 +1,13 @@
+{
+  "name": "arpit-portfolio-site",
+  "private": true,
+  "description": "Portfolio of Arpit Singh Rajput. Static site, pre-rendered from data/content.json.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "npx -y serve -l 4321 ."
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

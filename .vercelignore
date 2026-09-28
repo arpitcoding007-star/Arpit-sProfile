@@ -1,0 +1,4 @@
+Pictures/
+.claude/
+node_modules/
+*.bak

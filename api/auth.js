@@ -10,12 +10,16 @@ export default async function handler(req, res) {
       <html>
       <head>
         <title>CMS Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-          body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #0a0a0f; color: white; margin: 0; }
-          form { background: #141419; padding: 2rem; border-radius: 8px; border: 1px solid #00ff88; box-shadow: 0 0 20px rgba(0, 255, 136, 0.2); }
-          input { width: 100%; padding: 0.5rem; margin: 1rem 0; border-radius: 4px; border: 1px solid #333; background: #05050a; color: white; box-sizing: border-box; }
-          button { width: 100%; padding: 0.5rem; background: #00ff88; border: none; border-radius: 4px; color: #05050a; font-weight: bold; cursor: pointer; }
-          button:hover { opacity: 0.9; }
+          body { font-family: Barlow, 'Helvetica Neue', Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #ECEEEF; color: #1B1D1F; margin: 0; padding: 24px; box-sizing: border-box; }
+          form { width: min(100%, 340px); aspect-ratio: 1; display: flex; flex-direction: column; justify-content: center; padding: 56px; border-radius: 50%; background: #A6C8CE; box-sizing: border-box; }
+          h2 { font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; font-size: 20px; }
+          label { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; }
+          input { width: 100%; padding: 12px 16px; margin: 12px 0; border-radius: 999px; border: 1px solid rgba(27,29,31,0.25); background: #F4F5F6; color: #1B1D1F; box-sizing: border-box; font: inherit; }
+          input:focus { outline: 2px solid #3F7F8A; outline-offset: 2px; }
+          button { width: 100%; padding: 12px; background: #1B1D1F; border: none; border-radius: 999px; color: #fff; font: inherit; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; cursor: pointer; }
+          button:hover { background: #2F6A74; }
         </style>
       </head>
       <body>

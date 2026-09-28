@@ -3,1883 +3,234 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Arpit Singh Rajput - Web3 Partnerships & BD Leader</title>
     <meta name="description"
         content="Arpit Singh Rajput - strategic partnerships and business development leader bridging traditional finance and blockchain. 100+ partnerships, 2.5M+ community built across DeFi, payments and cross-chain infrastructure.">
     <meta name="author" content="Arpit Singh Rajput">
-    <meta name="theme-color" content="#05050a">
+    <meta name="theme-color" content="#ECEEEF">
+    <meta name="color-scheme" content="light">
+    <meta name="content-version" content="iulphn">
     <link rel="canonical" href="https://arpitsinghrajput.com/">
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://arpitsinghrajput.com/">
     <meta property="og:title" content="Arpit Singh Rajput - Web3 Partnerships & BD Leader">
     <meta property="og:description"
         content="Strategic partnerships and business development leader bridging traditional finance and blockchain ecosystems.">
-    <meta property="og:image" content="https://arpitsinghrajput.com/assets/img/arpit-pics.png">
-    <meta property="og:image:alt" content="Portrait of Arpit Singh Rajput">
+    <meta property="og:image" content="https://arpitsinghrajput.com/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Arpit Singh Rajput in front of a pale teal circle">
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Arpit Singh Rajput - Web3 Partnerships & BD Leader">
     <meta name="twitter:description"
         content="Strategic partnerships and business development leader bridging traditional finance and blockchain ecosystems.">
-    <meta name="twitter:image" content="https://arpitsinghrajput.com/assets/img/arpit-pics.png">
+    <meta name="twitter:image" content="https://arpitsinghrajput.com/assets/img/og-image.jpg">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20100%20100'%3E%3Crect%20width%3D'100'%20height%3D'100'%20rx%3D'22'%20fill%3D'%2305050a'%2F%3E%3Ctext%20x%3D'50'%20y%3D'68'%20font-family%3D'Verdana%2Csans-serif'%20font-size%3D'46'%20font-weight%3D'bold'%20fill%3D'%2300ff88'%20text-anchor%3D'middle'%3EA%3C%2Ftext%3E%3C%2Fsvg%3E">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Oswald:wght@300;400;500;600&display=swap">
+    <link rel="preload" as="image" type="image/webp" href="assets/img/arpit-profile-1100.webp"
+        imagesrcset="assets/img/arpit-profile-640.webp 640w, assets/img/arpit-profile-1100.webp 1100w"
+        imagesizes="(min-width: 1100px) 37vw, 72vw">
+    <link rel="stylesheet" href="assets/css/site.css">
 
-    <!-- Vercel Analytics -->
+    <script>
+        document.documentElement.classList.add('js');
+        setTimeout(function () {
+            if (!window.__asrBooted) document.documentElement.classList.add('no-motion', 'is-ready');
+        }, 2500);
+    </script>
+    <script type="module" src="assets/js/main.mjs"></script>
+
     <script type="module">
         import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics/+esm';
         inject();
     </script>
 
-    <style>
-        :root {
-            --primary: #00ff88;
-            --secondary: #0066ff;
-            --dark: #0a0a0f;
-            --darker: #05050a;
-            --card-bg: #141419;
-            --text: #ffffff;
-            --text-dim: #a0a0b0;
-            --accent-glow: rgba(0, 255, 136, 0.15);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        nav a.active {
-            color: var(--primary);
-        }
-
-        .experience-card:hover,
-        .skill-category:hover,
-        .education-card:hover {
-            box-shadow: 0 0 30px var(--accent-glow);
-        }
-
-        .skip-link {
-            position: absolute;
-            left: 1rem;
-            top: -100px;
-            z-index: 1000;
-            padding: 0.75rem 1.25rem;
-            background: var(--primary);
-            color: var(--darker);
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: 600;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: top 0.2s ease;
-        }
-
-        .skip-link:focus {
-            top: 1rem;
-        }
-
-        /* Visible keyboard focus for every interactive element */
-        a:focus-visible,
-        button:focus-visible {
-            outline: 2px solid var(--primary);
-            outline-offset: 3px;
-            border-radius: 4px;
-        }
-
-        /* Hamburger (shown below 968px, see media query) */
-        .nav-toggle {
-            display: none;
-            width: 44px;
-            height: 44px;
-            padding: 0;
-            background: transparent;
-            border: 1px solid rgba(0, 255, 136, 0.3);
-            border-radius: 8px;
-            cursor: pointer;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .nav-toggle span {
-            display: block;
-            width: 20px;
-            height: 2px;
-            background: var(--primary);
-            transition: transform 0.3s ease, opacity 0.2s ease;
-        }
-
-        .nav-toggle[aria-expanded="true"] span:nth-child(1) {
-            transform: translateY(7px) rotate(45deg);
-        }
-
-        .nav-toggle[aria-expanded="true"] span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .nav-toggle[aria-expanded="true"] span:nth-child(3) {
-            transform: translateY(-7px) rotate(-45deg);
-        }
-
-        /* Respect users who ask for less motion */
-        @media (prefers-reduced-motion: reduce) {
-
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.001ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.001ms !important;
-                scroll-behavior: auto !important;
-            }
-
-            .reveal {
-                opacity: 1;
-                transform: none;
-            }
-        }
-
-        #scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            width: 0%;
-            background: var(--primary);
-            z-index: 999;
-        }
-
-        .promotion-role {
-            display: inline-flex;
-            /* 🔑 instead of flex */
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .promotion-badge {
-            font-size: 0.65rem;
-            padding: 4px 10px;
-            border-radius: 999px;
-            background: rgba(0, 255, 136, 0.12);
-            border: 1px solid var(--primary);
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 600;
-        }
-
-        .promotion-badge {
-            position: relative;
-            cursor: default;
-        }
-
-        /* Tooltip */
-        .promotion-badge::after {
-            content: attr(data-tooltip);
-            position: absolute;
-            bottom: 140%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(5, 5, 10, 0.95);
-            color: #fff;
-            padding: 6px 10px;
-            font-size: 0.65rem;
-            border-radius: 6px;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.25s ease, transform 0.25s ease;
-            border: 1px solid rgba(0, 255, 136, 0.3);
-            box-shadow: 0 0 12px rgba(0, 255, 136, 0.15);
-        }
-
-        .promotion-badge {
-            position: relative;
-            cursor: default;
-        }
-
-        /* Tooltip arrow */
-        .promotion-badge::before {
-            content: "";
-            position: absolute;
-            bottom: 120%;
-            left: 50%;
-            transform: translateX(-50%);
-            border-width: 5px;
-            border-style: solid;
-            border-color: rgba(5, 5, 10, 0.95) transparent transparent transparent;
-            opacity: 0;
-            transition: opacity 0.25s ease;
-        }
-
-        /* Hover trigger */
-        .promotion-badge:hover::after,
-        .promotion-badge:hover::before {
-            opacity: 1;
-            transform: translateX(-50%) translateY(-4px);
-        }
-
-
-        /* Career Timeline Pulse */
-        #career-timeline {
-            padding: 3rem 0 5rem;
-        }
-
-        .timeline-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            gap: 1rem;
-        }
-
-        .timeline-wrapper::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: rgba(0, 255, 136, 0.15);
-            transform: translateY(-50%);
-        }
-
-        .timeline-item {
-            position: relative;
-            background: var(--darker);
-            padding: 0 1rem;
-            text-align: center;
-            z-index: 1;
-        }
-
-        .timeline-year {
-            font-family: 'Syne', sans-serif;
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-dot {
-            width: 10px;
-            height: 10px;
-            background: var(--primary);
-            border-radius: 50%;
-            margin: 0 auto 0.6rem;
-            box-shadow: 0 0 0 rgba(0, 255, 136, 0.6);
-            animation: pulseDot 2.5s infinite;
-        }
-
-        .timeline-text {
-            font-size: 0.75rem;
-            color: var(--text-dim);
-            white-space: nowrap;
-        }
-
-        .timeline-item.active .timeline-year,
-        .timeline-item.active .timeline-text {
-            color: var(--primary);
-        }
-
-        .achievements {
-            margin-top: 1.2rem;
-        }
-
-        .bd-subsection {
-            margin-top: 2rem;
-            padding: 1.4rem 1.6rem;
-            background: rgba(255, 255, 255, 0.02);
-            border-left: 3px solid var(--primary);
-            border-radius: 10px;
-            max-width: 100%;
-            /* 🔑 */
-            box-sizing: border-box;
-        }
-
-
-        .bd-heading {
-            font-family: 'Syne', sans-serif;
-            font-size: 1rem;
-            color: var(--primary);
-            margin-bottom: 0.9rem;
-            letter-spacing: 0.5px;
-        }
-
-
-        @keyframes pulseDot {
-            0% {
-                box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.5);
-            }
-
-            70% {
-                box-shadow: 0 0 0 10px rgba(0, 255, 136, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .timeline-wrapper {
-                flex-direction: column;
-                gap: 2rem;
-            }
-
-            .timeline-wrapper::before {
-                display: none;
-            }
-
-            .timeline-item {
-                padding: 0;
-            }
-        }
-
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            background: var(--darker);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-
-
-        /* Animated Background */
-        .bg-grid {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image:
-                linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
-            background-size: 50px 50px;
-            z-index: 0;
-            animation: gridMove 20s linear infinite;
-        }
-
-        @keyframes gridMove {
-            0% {
-                transform: translate(0, 0);
-            }
-
-            100% {
-                transform: translate(50px, 50px);
-            }
-        }
-
-        /* Network Nodes */
-        .network-visual {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 0;
-            opacity: 0.3;
-        }
-
-        .network-node {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: var(--primary);
-            border-radius: 50%;
-            box-shadow: 0 0 10px var(--primary);
-            animation: nodeFloat 10s ease-in-out infinite;
-        }
-
-        @keyframes nodeFloat {
-
-            0%,
-            100% {
-                transform: translate(0, 0);
-            }
-
-            25% {
-                transform: translate(30px, -30px);
-            }
-
-            50% {
-                transform: translate(-20px, 40px);
-            }
-
-            75% {
-                transform: translate(40px, 20px);
-            }
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Expertise Marquee */
-        .expertise-marquee {
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            background: linear-gradient(180deg,
-                    rgba(10, 10, 15, 0.95),
-                    rgba(5, 5, 10, 0.95));
-            overflow: hidden;
-            padding: 1.2rem 0;
-            position: relative;
-            z-index: 90;
-        }
-
-        .expertise-track {
-            display: flex;
-            width: max-content;
-            animation: expertise-marquee 40s linear infinite;
-        }
-
-        .expertise-marquee:hover .expertise-track {
-            animation-play-state: paused;
-        }
-
-        .expertise-track span {
-            margin: 0 3rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.4em;
-            text-transform: uppercase;
-            color: var(--text-dim);
-            cursor: default;
-            transition: color 0.3s ease, text-shadow 0.3s ease;
-        }
-
-        .expertise-track span:hover {
-            color: var(--primary);
-            text-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
-        }
-
-        /* Animation */
-        @keyframes expertise-marquee {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-
-        /* Header */
-        header {
-            padding: 2rem 0;
-            position: sticky;
-            /* anchors the mobile nav panel */
-            top: 0;
-            background: rgba(5, 5, 10, 0.8);
-            backdrop-filter: blur(20px);
-            z-index: 100;
-            border-bottom: 1px solid rgba(0, 255, 136, 0.1);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            text-decoration: none;
-            font-family: 'Syne', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        nav a {
-            color: var(--text-dim);
-            text-decoration: none;
-            margin-left: 2rem;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        /* Hero Section with Photo */
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            padding: 4rem 0;
-            position: relative;
-        }
-
-        .hero-content {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            width: 100%;
-        }
-
-        .hero-text {
-            flex: 3;
-        }
-
-        .hero-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-
-        .profile-container {
-            position: relative;
-            width: 100%;
-            max-width: 300px;
-            aspect-ratio: 1/1;
-            z-index: 2;
-        }
-
-        .profile-frame {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border-radius: 22px;
-            overflow: hidden;
-
-            /* ✅ NAVY BLUE BORDER */
-            border: 2px solid #000080;
-
-            /* keep existing glow */
-            box-shadow:
-                0 0 0 1px rgba(0, 255, 136, 0.2),
-                0 0 40px rgba(0, 255, 136, 0.25);
-
-            background: #000;
-        }
-
-
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: translate(-50%, -50%) scale(1);
-            }
-
-            50% {
-                transform: translate(-50%, -50%) scale(1.2);
-            }
-        }
-
-        .profile-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center top;
-            display: block;
-        }
-
-        .profile-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to bottom,
-                    rgba(0, 0, 0, 0.15),
-                    rgba(0, 0, 0, 0.45));
-            z-index: 1;
-        }
-
-
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        .profile-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .badge-icon {
-            width: 24px;
-            height: 24px;
-            background: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            color: var(--dark);
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .hero-tag {
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            background: rgba(0, 255, 136, 0.1);
-            border: 1px solid var(--primary);
-            border-radius: 50px;
-            color: var(--primary);
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 2rem;
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        h1 {
-            font-family: 'Syne', sans-serif;
-            font-size: 5rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 0.8s ease-out 0.2s backwards;
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
-            font-size: 1.1rem;
-            color: var(--text-dim);
-            margin-bottom: 2rem;
-            line-height: 1.8;
-            animation: fadeInUp 0.8s ease-out 0.4s backwards;
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 3rem;
-            margin-bottom: 3rem;
-            animation: fadeInUp 0.8s ease-out 0.6s backwards;
-        }
-
-        .stat {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .stat-number {
-            font-family: 'Syne', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--primary);
-        }
-
-        .stat-label {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            animation: fadeInUp 0.8s ease-out 0.8s backwards;
-        }
-
-        .btn {
-            padding: 1rem 2.5rem;
-            border: none;
-            border-radius: 8px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.9rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: var(--dark);
-            box-shadow: 0 0 30px var(--accent-glow);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 50px var(--accent-glow);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--text);
-            border: 1px solid var(--text-dim);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        .hero h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            letter-spacing: -0.02em;
-        }
-
-        .hero h1 span.gradient-text {
-            font-weight: 700;
-        }
-
-        .hero h1 {
-            font-weight: 600;
-        }
-
-        .hero h1 span.gradient-text {
-            font-weight: 700;
-        }
-
-        /* Sections */
-        section {
-            padding: 6rem 0;
-            position: relative;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-tag {
-            color: var(--primary);
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 1rem;
-        }
-
-        h2 {
-            font-family: 'Syne', sans-serif;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .section-subtitle {
-            color: var(--text-dim);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Experience Cards */
-        .experience-grid {
-            display: grid;
-            gap: 3rem;
-        }
-
-        .experience-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 2.5rem;
-            transition: all 0.4s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .experience-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(180deg, var(--primary), var(--secondary));
-            opacity: 0;
-            transition: opacity 0.4s;
-        }
-
-        .experience-card:hover {
-            border-color: var(--primary);
-            transform: translateX(8px);
-        }
-
-        .experience-card:hover::before {
-            opacity: 1;
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            /* 🔑 FIX */
-            gap: 1.5rem;
-        }
-
-        .company-info h3 {
-            font-family: 'Syne', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 0.3rem;
-        }
-
-        .company-info {
-            max-width: 70%;
-        }
-
-        @media (max-width: 768px) {
-            .company-info {
-                max-width: 100%;
-            }
-        }
-
-        .role {
-            color: var(--primary);
-            font-size: 0.95rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .location {
-            color: var(--text-dim);
-            font-size: 0.85rem;
-        }
-
-        .duration {
-            text-align: right;
-            color: var(--text-dim);
-            font-size: 0.85rem;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-
-
-
-        .achievements {
-            list-style: none;
-        }
-
-        .achievements li {
-            padding-left: 1.5rem;
-            margin-bottom: 0.8rem;
-            position: relative;
-            color: var(--text-dim);
-            font-size: 0.9rem;
-        }
-
-        .achievements li::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .skill-category {
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 2rem;
-            transition: all 0.3s;
-        }
-
-        .skill-category:hover {
-            border-color: var(--primary);
-            box-shadow: 0 0 30px var(--accent-glow);
-        }
-
-        .skill-category h3 {
-            font-family: 'Syne', sans-serif;
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
-
-        .skill-tag {
-            padding: 0.5rem 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 6px;
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            transition: all 0.3s;
-        }
-
-        .skill-tag:hover {
-            background: rgba(0, 255, 136, 0.1);
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        /* Education */
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-        }
-
-        .education-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 2rem;
-            transition: all 0.3s;
-        }
-
-        .education-card:hover {
-            border-color: var(--primary);
-        }
-
-        .education-card h3 {
-            font-family: 'Syne', sans-serif;
-            font-size: 1.3rem;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .degree {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .university {
-            color: var(--text-dim);
-            font-size: 0.9rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .year {
-            color: var(--text-dim);
-            font-size: 0.85rem;
-        }
-
-        /* Contact Section */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .contact-info h3 {
-            font-family: 'Syne', sans-serif;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-links {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .contact-link {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.5rem;
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            text-decoration: none;
-            color: var(--text);
-            transition: all 0.3s;
-        }
-
-        .contact-link:hover {
-            border-color: var(--primary);
-            transform: translateX(8px);
-        }
-
-        .contact-icon {
-            width: 24px;
-            height: 24px;
-            color: var(--primary);
-        }
-
-        .contact-text {
-            flex: 1;
-        }
-
-        .contact-label {
-            font-size: 0.8rem;
-            color: var(--text-dim);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .contact-value {
-            font-size: 1rem;
-            margin-top: 0.2rem;
-        }
-
-        .contact-visual {
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 3rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .contact-visual::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            transform: translate(-50%, -50%);
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        .contact-visual-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--primary);
-            border-radius: 50%;
-            animation: blink 2s ease-in-out infinite;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.3;
-            }
-        }
-
-        /* Footer */
-        footer {
-            padding: 3rem 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            text-align: center;
-            color: var(--text-dim);
-            font-size: 0.9rem;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 968px) {
-            h1 {
-                font-size: 3.5rem;
-            }
-
-            h2 {
-                font-size: 2.5rem;
-            }
-
-            .hero-stats {
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .education-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-toggle {
-                display: flex;
-            }
-
-            nav {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                flex-direction: column;
-                padding: 1rem 1.5rem 1.5rem;
-                background: rgba(5, 5, 10, 0.97);
-                backdrop-filter: blur(20px);
-                border-bottom: 1px solid rgba(0, 255, 136, 0.15);
-                display: none;
-            }
-
-            nav.open {
-                display: flex;
-            }
-
-            nav a {
-                margin-left: 0;
-                padding: 0.85rem 0;
-                font-size: 1rem;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            }
-
-            nav a:last-child {
-                border-bottom: none;
-            }
-
-            .hero-content {
-                flex-direction: column-reverse;
-            }
-
-            .profile-container {
-                width: 280px;
-                height: 280px;
-            }
-
-        }
-
-        @media (max-width: 640px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-                text-align: center;
-            }
-
-            .profile-container {
-                width: 250px;
-                height: 250px;
-            }
-        }
-
-        /* Scroll reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease-out;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Arpit Singh Rajput",
+        "url": "https://arpitsinghrajput.com/",
+        "image": "https://arpitsinghrajput.com/assets/img/og-image.jpg",
+        "jobTitle": "Business Development Leader",
+        "worksFor": { "@type": "Organization", "name": "Kima Network" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Delhi", "addressCountry": "IN" },
+        "sameAs": ["https://www.linkedin.com/in/arpit-singh-rajput-a597bb164/"]
+    }
+    </script>
 </head>
 
 <body>
-    <a href="#main" class="skip-link">Skip to content</a>
-    <div id="scroll-progress"></div>
-    <div class="bg-grid"></div>
-    <div class="network-visual" id="networkVisual"></div>
-    <div class="expertise-marquee">
-        <div class="expertise-track">
-            <span>DeFi</span>
-            <span>Layer 2</span>
-            <span>Payments</span>
-            <span>Web3</span>
-            <span>Cross-Chain</span>
-            <span>Fintech</span>
-            <span>Infrastructure</span>
-            <span>RWA</span>
-            <span>Interoperability</span>
+    <a href="#main" class="skip">Skip to content</a>
 
-            <span>DeFi</span>
-            <span>Layer 2</span>
-            <span>Payments</span>
-            <span>Web3</span>
-            <span>Cross-Chain</span>
-            <span>Fintech</span>
-            <span>Infrastructure</span>
-            <span>RWA</span>
-            <span>Interoperability</span>
-        </div>
-    </div>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="#main" class="logo" aria-label="Arpit Singh Rajput - home">ASR</a>
-                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
-                    aria-controls="site-nav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav id="site-nav" aria-label="Main">
-                    <a href="#experience">Experience</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#education">Education</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </div>
+    <header class="chrome" data-chrome>
+        <a class="logo" href="#top" aria-label="Arpit Singh Rajput, home">ASR</a>
+
+        <nav class="barnav navtext" aria-label="Main, condensed" data-barnav>
+            <a href="#experience" data-nav="experience">Experience</a>
+            <a href="#skills" data-nav="skills">Skills</a>
+            <a href="#education" data-nav="education">Education</a>
+            <a href="#contact" data-nav="contact">Contact</a>
+        </nav>
+
+        <a class="cta linkbtn" href="#contact">Get in touch<span class="dot dot--ink"><svg class="icon-plus" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></span></a>
+
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu" data-menu-btn>
+            <span class="dot dot--ink"><svg class="icon-plus" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg></span>
+        </button>
     </header>
 
-    <section class="hero" id="main">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-tag">Marketing &amp; Business Development</div>
-                    <h1 data-cms-hero-name>
-                        Arpit Singh<br>
-                        <span class="gradient-text">Rajput</span>
-                    </h1>
-                    <p class="hero-subtitle" data-cms-hero-subtitle>
-                        <strong> Fintech | Blockchain | Payments | Stablecoins | Web 2 <—> Web3 Integration
-                        </strong><br><br>
-                        Strategic partnerships and business development leader bridging traditional finance and
-                        blockchain ecosystems. Currently driving Web2 and Web3 client acquisition, partnership
-                        integrations, and infrastructure expansion at KIMA Network. Expert in DeFi protocols,
-                        cross-chain solutions, and enterprise blockchain adoption with a track record of building 1M+
-                        communities across multiple chains.
-                    </p>
+    <div class="menu" id="menu" data-menu>
+        <nav aria-label="Menu">
+            <ol class="menu__list">
+                <li><a href="#top" style="--i:0"><span>01</span>Home</a></li>
+                <li><a href="#journey" style="--i:1"><span>02</span>Journey</a></li>
+                <li><a href="#experience" style="--i:2"><span>03</span>Experience</a></li>
+                <li><a href="#skills" style="--i:3"><span>04</span>Skills</a></li>
+                <li><a href="#education" style="--i:4"><span>05</span>Education</a></li>
+                <li><a href="#contact" style="--i:5"><span>06</span>Contact</a></li>
+            </ol>
+        </nav>
+        <a class="linkbtn" href="Arpit_Resume.pdf" download>Download resume<span class="dot dot--teal"><svg class="icon-down" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 2v9M3 7l4 4 4-4M2 13h10"/></svg></span></a>
+    </div>
 
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <div class="stat-number" data-cms-stat-years>8+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number" data-cms-stat-community>2.5M+</div>
-                            <div class="stat-label">Community Built</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number" data-cms-stat-projects>100+</div>
-                            <div class="stat-label">Strategic Partnerships</div>
-                        </div>
-                    </div>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                        <a href="https://www.linkedin.com/in/arpit-singh-rajput-a597bb164/" target="_blank"
-                            class="btn btn-secondary">LinkedIn Profile</a>
-                        <a href="Arpit_Resume.pdf" download class="btn btn-secondary">
-                            Download Resume
-                        </a>
+    <nav class="pager" aria-label="Sections" data-pager>
+        <a href="#contact" data-pager-prev aria-label="Previous section: Contact">06</a>
+        <span class="pager__rule" aria-hidden="true"></span>
+        <span class="pager__now" data-pager-now aria-live="polite">01</span>
+        <span class="pager__rule" aria-hidden="true"></span>
+        <a href="#journey" data-pager-next aria-label="Next section: Journey">02</a>
+    </nav>
 
-                    </div>
+    <main id="main">
+
+        <!-- 01 Home -->
+        <section class="panel hero" id="top" data-section="Home" aria-labelledby="hero-name">
+            <div class="stage">
+                <nav class="vnav navtext" aria-label="Main" data-vnav>
+                    <a href="#experience" data-nav="experience">Experience</a>
+                    <a href="#skills" data-nav="skills">Skills</a>
+                    <a href="#education" data-nav="education">Education</a>
+                    <a href="#contact" data-nav="contact">Contact</a>
+                </nav>
+
+                <div class="hero__visual">
+                    <div class="disc" style="--d:560;--cx:780;--cy:390" aria-hidden="true"></div>
+                    <figure class="portrait">
+                        <img src="assets/img/arpit-profile-1100.webp"
+                            srcset="assets/img/arpit-profile-640.webp 640w, assets/img/arpit-profile-1100.webp 1100w"
+                            sizes="(min-width: 1100px) 37vw, 72vw" width="1100" height="1468"
+                            alt="Arpit Singh Rajput in profile, wearing a black knit henley" fetchpriority="high" decoding="async">
+                    </figure>
                 </div>
 
-                <div class="hero-image">
-                    <div class="profile-container">
-                        <div class="profile-frame">
-                            <img src="assets/img/arpit-pics.png" alt="Portrait of Arpit Singh Rajput"
-                                width="600" height="600" decoding="async" fetchpriority="high"
-                                onerror="this.style.display='none'">
-
-                            <div class="profile-overlay"></div>
-                        </div>
-                    </div>
+                <div class="hero__id at at--b" style="--x:120;--b:104;--w:560">
+                    <h1 class="hero__name reveal" id="hero-name" style="--i:1" data-region="heroName"><!-- region:heroName -->Arpit Singh Rajput<!-- /region:heroName --></h1>
+                    <p class="hero__tag reveal" style="--i:2" data-region="heroTagline"><!-- region:heroTagline -->Bridging traditional finance and blockchain ecosystems.<!-- /region:heroTagline --></p>
                 </div>
+
+                <a class="linkbtn hero__resume at at--br reveal" style="--r:120;--b:100;--i:3" href="Arpit_Resume.pdf" download>Download resume<span class="dot dot--teal"><svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg></span></a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="career-timeline">
-        <div class="container">
-            <div class="timeline-wrapper reveal">
-
-                <div class="timeline-item">
-                    <span class="timeline-year">2019</span>
-                    <span class="timeline-dot"></span>
-                    <span class="timeline-text">Community & Crypto Content</span>
+        <!-- 02 Journey -->
+        <section class="panel journey" id="journey" data-section="Journey" aria-labelledby="journey-h">
+            <div class="stage">
+                <div class="at" id="career-timeline" style="--x:120;--y:300;--w:460">
+                    <h2 class="label reveal" id="journey-h">Career timeline</h2>
+                    <ol class="tl" data-region="journey"><!-- region:journey --><li class="tl__row reveal" style="--i:1"><span class="tl__year">2019</span><span class="tl__label">Community &amp; Crypto Content</span></li><li class="tl__row reveal" style="--i:2"><span class="tl__year">2022</span><span class="tl__label">Operations &amp; DAO VC</span></li><li class="tl__row reveal" style="--i:3"><span class="tl__year">2024</span><span class="tl__label">Marketing &amp; Growth</span></li><li class="tl__row reveal" style="--i:4"><span class="tl__year">2025</span><span class="tl__label">BD &amp; Strategic Partnerships</span></li><!-- /region:journey --></ol>
                 </div>
 
-                <div class="timeline-item">
-                    <span class="timeline-year">2022</span>
-                    <span class="timeline-dot"></span>
-                    <span class="timeline-text">Operations & DAO VC</span>
+                <div class="disc" style="--d:560;--cx:980;--cy:450">
+                    <div class="disc__body stats" data-region="stats"><!-- region:stats --><div class="stat"><span class="stat__value">8+</span><span class="stat__label">Years experience</span></div><div class="stat"><span class="stat__value">2.5M+</span><span class="stat__label">Community built</span></div><div class="stat"><span class="stat__value">100+</span><span class="stat__label">Strategic partnerships</span></div><!-- /region:stats --></div>
                 </div>
 
-                <div class="timeline-item">
-                    <span class="timeline-year">2024</span>
-                    <span class="timeline-dot"></span>
-                    <span class="timeline-text">Marketing & Growth</span>
-                </div>
-
-                <div class="timeline-item active">
-                    <span class="timeline-year">2025</span>
-                    <span class="timeline-dot"></span>
-                    <span class="timeline-text">BD & Strategic Partnerships</span>
-                </div>
-
+                <p class="journey__focus at at--b reveal" style="--x:120;--b:104;--w:460;--i:6" data-region="focus"><!-- region:focus -->Fintech | Blockchain | Payments | Stablecoins | Web 2 &lt;—&gt; Web3 Integration<!-- /region:focus --></p>
             </div>
-        </div>
-    </section>
-    <section id="experience">
-        <div class="container">
-            <div class="section-header reveal">
-                <div class="section-tag">Career Journey</div>
-                <h2>Professional Experience</h2>
-                <p class="section-subtitle">
-                    Leading partnerships and growth initiatives in the Web3 ecosystem
-                </p>
-            </div>
+        </section>
 
-            <div class="experience-grid">
-                <div class="experience-card reveal">
-                    <div class="experience-header">
-                        <div class="company-info">
-                            <h3>Kima Network</h3>
-                            <div class="role promotion-role">
-                                Business Development Leader
-                                <span class="promotion-badge" data-tooltip="Promoted in Jan 2025">
-                                    Promotion
-                                </span>
-                            </div>
-                            <div class="location">Israel (Remote)</div>
-                        </div>
+        <!-- 03 Experience -->
+        <section class="panel experience" id="experience" data-section="Experience" aria-labelledby="experience-h">
+            <div class="stage stage--exp">
+                <div class="feature at" style="--x:120;--y:300;--w:500" data-region="featured"><!-- region:featured --><h2 id="experience-h" class="label reveal" style="--i:0">Professional experience <span aria-hidden="true">· 01 / 05</span></h2><h3 class="feature__company reveal" style="--i:1">Kima Network</h3><p class="feature__role reveal" style="--i:2">Business Development Leader <span class="pill" title="Promoted in Jan 2025">Promotion<span class="sr-only">: Promoted in Jan 2025</span></span></p><p class="meta reveal" style="--i:3">Israel (Remote) · January 2024 – Present</p><p class="feature__summary reveal" style="--i:4">Promoted internally from prior marketing role. Driving Web2 and Web3 client acquisition, onboarding, and integrations for KIMA&#39;s cross-chain payment infrastructure.</p><ul class="dots reveal" style="--i:5"><li>Established 100+ partnerships</li><li>Scaled 2.5M+ community</li><li>Represented company at conferences/AMAs</li></ul><!-- /region:featured --></div>
 
-                        <div class="duration">
-                            January 2024 – Present<br>
-                            <span style="color: var(--primary);">Current Role</span>
-                        </div>
-                    </div>
-
-                    <ul class="achievements" data-cms-kima-experience>
-                        <li>Promoted internally from Marketing & Community Management to Business Development based on
-                            performance and strategic impact.</li>
-                        <li>Driving Web2 and Web3 client acquisition, onboarding, and integrations for KIMA’s
-                            cross-chain payment infrastructure.</li>
-                        <li>Established and managed 100+ strategic partnerships across fintech, DeFi, and blockchain
-                            ecosystems.</li>
-                        <li>Acting as a bridge between Web2 enterprises and Web3 protocols to enable seamless blockchain
-                            adoption.</li>
-                        <li>Scaled and managed a 2.5M+ global community across multiple platforms.</li>
-                        <li>Represented KIMA in demos, AMAs, conferences, and negotiations.</li>
-                    </ul>
-                </div>
-                <div class="bd-subsection">
-                    <h4 class="bd-heading">
-                        Strategic Impact (Post-Promotion)
-                    </h4>
-
-                    <ul class="achievements" data-cms-kima-strategic>
-                        <li>Led end-to-end business development strategy, identifying, onboarding, and managing
-                            strategic partners across Web2 and Web3 ecosystems.</li>
-                        <li>Secured 100+ strategic partnerships that expanded market presence and accelerated business
-                            growth.</li>
-                        <li>Established partnerships across wallets, exchanges, infrastructure providers, dApps, payment
-                            processors, and ecosystem partners.</li>
-                        <li>Built long-term relationships with founders, BD heads, and ecosystem leaders to unlock
-                            co-marketing and revenue opportunities.</li>
-                    </ul>
-                </div>
-
-
-                <div class="experience-card reveal">
-                    <div class="experience-header">
-                        <div class="company-info">
-                            <h3>MultiFarm.fi</h3>
-                            <div class="role">Marketing Manager</div>
-                            <div class="location">United Kingdom (Remote)</div>
-                        </div>
-                        <div class="duration">
-                            June 2023 – January 2024<br>
-                            <span style="color: var(--primary);">8 months</span>
-                        </div>
-                    </div>
-                    <ul class="achievements" data-cms-multifarm-experience>
-                        <li>Delivered and marketed 5+ DeFi products across Linea, zkSync, Scroll, and Solana.</li>
-                        <li>Built 100k+ community within one month for HorizonDEX launch.</li>
-                        <li>Executed go-to-market strategies for DeFi protocols and yield platforms.</li>
-                    </ul>
-                </div>
-
-
-                <div class="experience-card reveal">
-                    <div class="experience-header">
-                        <div class="company-info">
-                            <h3>CrowdFundJunction (DAO VC)</h3>
-                            <div class="role">Head of Operations & Crypto Analyst</div>
-                            <div class="location">Singapore / New Delhi</div>
-                        </div>
-                        <div class="duration">
-                            January 2022 – June 2023<br>
-                            <span style="color: var(--primary);">1.5 years</span>
-                        </div>
-                    </div>
-                    <ul class="achievements" data-cms-crowdfund-experience>
-                        <li>Led operations for a crypto-focused DAO VC investing across DeFi, Layer 1/2, NFTs, and
-                            Metaverse projects.</li>
-                        <li>Conducted due diligence, market research, and investment analysis for early-stage Web3
-                            startups.</li>
-                        <li>Managed internal operations, reporting, and process optimization for DAO governance.</li>
-                    </ul>
-                </div>
-
-
-                <div class="experience-card reveal">
-                    <div class="experience-header">
-                        <div class="company-info">
-                            <h3>Mystery of Crypto (MoneyKing)</h3>
-                            <div class="role">Community Manager & Content Creator</div>
-                            <div class="location">Remote</div>
-                        </div>
-                        <div class="duration">
-                            January 2019 - December 2021<br>
-                            <span style="color: var(--primary);">3 years</span>
-                        </div>
-                    </div>
-                    <ul class="achievements" data-cms-mystery-experience>
-                        <li>Managed and nurtured vibrant community ecosystem with consistent active engagement.</li>
-                        <li>Fostered genuine connections and cultivated sense of belonging among community members.</li>
-                        <li>Excelled as content creator and partnership manager for crypto projects.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="experience-card reveal" style="margin-top: 3rem;">
-            <div class="experience-header">
-                <div class="company-info">
-                    <h3>Additional Web3 & Freelance Experience</h3>
-                    <div class="role">Digital Magazine Publication & Advisory</div>
-                    <div class="location">Remote</div>
-                </div>
-
-                <div class="duration">
-                    2018 – Present
+                <div class="disc" style="--d:520;--cx:1040;--cy:410">
+                    <div class="disc__body highlights" data-region="strategic"><!-- region:strategic --><h3 class="disc__label">Strategic impact highlights</h3><ul class="highlights__list"><li>End-to-end partnership strategy</li><li>Partnerships across wallets, exchanges, infrastructure providers, dApps</li><li>Relationship-building with ecosystem leaders</li></ul><!-- /region:strategic --></div>
                 </div>
             </div>
 
-            <ul class="achievements" data-cms-additional-experience>
-                <li>Led the publication of a digital magazine focused on Crypto & NFT, overseeing content creation,
-                    editing, and deep analytical reports.</li>
-                <li>Curated "hidden gems" and thought leadership content that served as a valuable resource for industry
-                    insights and project updates.</li>
-                <li>Enhanced organizational reputation and brand awareness through strategic marketing of digital
-                    publications.</li>
-                <li>Actively monitored industry trends, technological advancements, and regulatory developments in the
-                    Cryptocurrency and Web3 space.</li>
-                <li>Leveraged ongoing research and knowledge acquisition to ensure informed investment decisions and
-                    maintain a competitive edge.</li>
-            </ul>
-        </div>
+            <ol class="rows" aria-label="Earlier roles" data-region="roles"><!-- region:roles --><li class="xrow reveal-self"><div class="xrow__cell"><h3 class="xrow__company">MultiFarm.fi</h3><p class="xrow__note">United Kingdom (Remote)</p></div><div class="xrow__cell"><p class="xrow__role">Marketing Manager</p><p class="meta meta--sm">June 2023 – January 2024 · 8 months</p></div><ul class="xrow__cell xrow__list"><li>Delivered 5+ DeFi products (Linea, zkSync, Scroll, Solana)</li><li>Built 100k+ community for HorizonDEX launch</li></ul></li><li class="xrow reveal-self"><div class="xrow__cell"><h3 class="xrow__company">CrowdFundJunction</h3><p class="xrow__note">DAO VC · Singapore / New Delhi</p></div><div class="xrow__cell"><p class="xrow__role">Head of Operations &amp; Crypto Analyst</p><p class="meta meta--sm">January 2022 – June 2023 · 1.5 years</p></div><ul class="xrow__cell xrow__list"><li>Crypto VC operations</li><li>Due diligence and investment analysis for Web3 startups</li><li>DAO governance management</li></ul></li><li class="xrow reveal-self"><div class="xrow__cell"><h3 class="xrow__company">Mystery of Crypto</h3><p class="xrow__note">MoneyKing · Remote</p></div><div class="xrow__cell"><p class="xrow__role">Community Manager &amp; Content Creator</p><p class="meta meta--sm">January 2019 – December 2021 · 3 years</p></div><ul class="xrow__cell xrow__list"><li>Community ecosystem management</li><li>Content creation</li><li>Partnership management</li></ul></li><li class="xrow reveal-self"><div class="xrow__cell"><h3 class="xrow__company">Digital Magazine</h3><p class="xrow__note">Additional Web3 &amp; freelance</p></div><div class="xrow__cell"><p class="xrow__role">Publication &amp; Advisory</p><p class="meta meta--sm">2018 – Present</p></div><ul class="xrow__cell xrow__list"><li>Crypto &amp; NFT publication</li><li>Industry trend monitoring</li><li>Research and analysis</li></ul></li><!-- /region:roles --></ol>
+        </section>
 
-    </section>
-
-        <section id="skills">
-            <div class="container">
-                <div class="section-header reveal">
-                    <div class="section-tag">Expertise</div>
-                    <h2>Skills & Competencies</h2>
-                    <p class="section-subtitle">
-                        Comprehensive toolkit for Web3 success
-                    </p>
+        <!-- 04 Skills & Interests -->
+        <section class="panel skills" id="skills" data-section="Skills" aria-labelledby="skills-h">
+            <div class="stage">
+                <div class="at" style="--x:120;--y:300;--w:480">
+                    <h2 class="label reveal" id="skills-h">Skills &amp; competencies</h2>
+                    <p class="statement reveal" style="--i:1" data-region="skillsHeadline"><!-- region:skillsHeadline -->Comprehensive toolkit for Web3 success<!-- /region:skillsHeadline --></p>
                 </div>
 
-                <div class="skills-grid" id="skillsGrid">
-                    <!-- Dynamic Skills -->
+                <div class="disc" style="--d:560;--cx:1040;--cy:450">
+                    <ul class="disc__body expertise" aria-label="Areas of expertise" data-region="expertise"><!-- region:expertise --><li>DeFi</li><li>Layer 2</li><li>Payments</li><li>Web3</li><li>Cross-Chain</li><li>Fintech</li><li>Infrastructure</li><li>RWA</li><li>Interoperability</li><!-- /region:expertise --></ul>
+                </div>
+
+                <div class="hobbies at at--b" id="hobbies" style="--x:120;--b:104;--w:600">
+                    <p class="label reveal" style="--i:1">Beyond work</p>
+                    <h3 class="hobbies__title reveal" style="--i:2">Hobbies &amp; interests</h3>
+                    <div class="hobbies__body" data-region="hobbies"><!-- region:hobbies --><p class="hobbies__intro reveal" style="--i:3">Activities that keep me engaged outside professional work.</p><ul class="chips reveal" style="--i:4"><li>Market Research</li><li>Protocol Analysis</li><li>Emerging Trends</li><li>Cricket</li></ul><!-- /region:hobbies --></div>
+                </div>
+            </div>
+
+            <div class="disciplines">
+                <p class="label reveal-self">Disciplines</p>
+                <ul class="cats" data-region="categories"><!-- region:categories --><li class="cat reveal-self"><h3 class="cat__name">Business Development</h3><ul class="taglist"><li>Client Acquisition</li><li>Partnership Development</li><li>Web2↔Web3 Integration</li><li>Strategic Negotiations</li><li>Go-to-Market Strategy</li><li>Relationship Management</li><li>B2B Sales</li><li>Deal Structuring</li></ul></li><li class="cat reveal-self"><h3 class="cat__name">Blockchain &amp; DeFi</h3><ul class="taglist"><li>DeFi Protocols</li><li>Liquid Staking</li><li>DEX Development</li><li>Yield Optimization</li><li>Smart Contracts</li><li>Cross-chain Solutions</li><li>Layer 1/2 Protocols</li><li>Payment Infrastructure</li></ul></li><li class="cat reveal-self"><h3 class="cat__name">Analytics &amp; Tools</h3><ul class="taglist"><li>Token Terminal</li><li>DeFiLlama</li><li>Dune Analytics</li><li>Onchain Analysis</li><li>Glassnode</li><li>CryptoFees</li><li>Messari</li><li>Technical Analysis</li></ul></li><li class="cat reveal-self"><h3 class="cat__name">Community &amp; Growth</h3><ul class="taglist"><li>Community Building</li><li>Growth Marketing</li><li>User Acquisition</li><li>Content Strategy</li><li>Social Media</li><li>Campaign Management</li><li>Engagement Strategy</li></ul></li><li class="cat reveal-self"><h3 class="cat__name">Operations &amp; Management</h3><ul class="taglist"><li>Project Management</li><li>Operations Leadership</li><li>Team Collaboration</li><li>Financial Modeling</li><li>Due Diligence</li><li>Strategic Planning</li><li>Market Research</li></ul></li><li class="cat reveal-self"><h3 class="cat__name">Technical Knowledge</h3><ul class="taglist"><li>Blockchain Fundamentals</li><li>NFT Ecosystem</li><li>Tokenomics</li><li>X2E Models</li><li>Node Operations</li><li>Interoperability</li><li>Bridge Protocols</li></ul></li><!-- /region:categories --></ul>
+            </div>
+        </section>
+
+        <!-- 05 Education -->
+        <section class="panel education" id="education" data-section="Education" aria-labelledby="education-h">
+            <div class="stage">
+                <div class="at" style="--x:120;--y:300;--w:540">
+                    <h2 class="label reveal" id="education-h">Education</h2>
+                    <ol class="edu-list" data-region="education"><!-- region:education --><li class="edu reveal" style="--i:1"><p class="meta meta--sm">August 2018 – June 2020</p><h3 class="edu__degree">Master of Computer Applications (MCA)</h3><p class="edu__field">Computer Programming &amp; Specific Applications</p><p class="edu__school">Amity University</p></li><li class="edu reveal" style="--i:2"><p class="meta meta--sm">2014 – 2017</p><h3 class="edu__degree">Bachelor of Computer Applications (BCA)</h3><p class="edu__field">Computer Science</p><p class="edu__school">Guru Gobind Singh Indraprastha University</p></li><li class="edu reveal" style="--i:3"><p class="meta meta--sm">New Delhi</p><h3 class="edu__degree">Intermediate of Science</h3><p class="edu__field">Science</p><p class="edu__school">Delhi Jain Public School</p></li><!-- /region:education --></ol>
+                </div>
+
+                <div class="disc" style="--d:520;--cx:1060;--cy:450" aria-hidden="true">
+                    <div class="disc__body edu-feature" data-region="educationFeature"><!-- region:educationFeature --><span class="edu-feature__title">MCA</span><span class="disc__label">Amity University</span><span class="edu-feature__years">2018 — 2020</span><!-- /region:educationFeature --></div>
                 </div>
             </div>
         </section>
 
-        <section id="hobbies">
-            <div class="container">
-                <div class="section-header reveal">
-                    <div class="section-tag">Beyond Work</div>
-                    <h2>Hobbies & Interests</h2>
-                    <p class="section-subtitle">
-                        Activities that keep me engaged outside professional work
-                    </p>
+        <!-- 06 Contact -->
+        <section class="panel contact" id="contact" data-section="Contact" aria-labelledby="contact-h">
+            <div class="stage">
+                <div class="disc" style="--d:620;--cx:720;--cy:450">
+                    <div class="disc__body contact__body" data-region="contact"><!-- region:contact --><p class="disc__label">Contact</p><h2 class="contact__headline" id="contact-h">Let&#39;s build together</h2><p class="contact__text">Interested in partnerships, integrations, or discussing Web3 opportunities? Feel free to reach out through any channel.</p><div class="contact__ctas"><a class="linkbtn" href="https://www.linkedin.com/in/arpit-singh-rajput-a597bb164/" target="_blank" rel="noopener">LinkedIn profile<span class="dot dot--ink"><svg class="icon-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg></span></a><a class="linkbtn" href="Arpit_Resume.pdf" download>Resume<span class="dot dot--paper"><svg class="icon-down" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 2v9M3 7l4 4 4-4M2 13h10"/></svg></span></a></div><!-- /region:contact --></div>
                 </div>
 
-                <div class="skills-grid" id="hobbiesGrid">
-                    <!-- Dynamic Hobbies -->
+                <div class="channels-wrap at" style="--x:120;--y:300;--w:250">
+                    <h3 class="label reveal">Channels</h3>
+                    <ul class="channels" data-region="channels"><!-- region:channels --><li class="reveal" style="--i:1"><span class="channels__key">Email</span><a href="mailto:arpitkumar9619@gmail.com">arpitkumar9619@gmail.com</a></li><li class="reveal" style="--i:2"><span class="channels__key">WhatsApp</span><a href="https://wa.me/918076396661" target="_blank" rel="noopener">+91 80763 96661</a></li><li class="reveal" style="--i:3"><span class="channels__key">Telegram</span><a href="https://t.me/arpitrajput007" target="_blank" rel="noopener">@arpitrajput007</a></li><li class="reveal" style="--i:4"><span class="channels__key">Location</span><span>Delhi, India</span></li><!-- /region:channels --></ul>
                 </div>
+
+                <footer class="foot">
+                    <p class="foot__copy at at--b reveal" style="--x:120;--b:112;--w:420">&copy; <span data-year>2026</span> Arpit Singh Rajput. All rights reserved.</p>
+                    <a class="linkbtn at at--br reveal" style="--r:120;--b:100;--i:1" href="#top">Back to top<span class="dot dot--teal"><svg class="icon-up" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 12V2M3 6l4-4 4 4"/></svg></span></a>
+                </footer>
             </div>
         </section>
 
-        <section id="education">
-            <div class="container">
-                <div class="section-header reveal">
-                    <div class="section-tag">Academic Background</div>
-                    <h2>Education</h2>
-                </div>
-
-                <div class="education-grid">
-                    <div class="education-card reveal">
-                        <h3 data-cms-edu-mca>Master of Computer Applications</h3>
-                        <div class="degree">MCA - Computer Programming & Specific Applications</div>
-                        <div class="university">Amity University</div>
-                        <div class="year">August 2018 - June 2020</div>
-                    </div>
-
-                    <div class="education-card reveal">
-                        <h3 data-cms-edu-bca>Bachelor of Computer Applications</h3>
-                        <div class="degree">BCA - Computer Science</div>
-                        <div class="university">Guru Gobind Singh Indraprastha University</div>
-                        <div class="year">2014 - 2017</div>
-                    </div>
-
-                    <div class="education-card reveal">
-                        <h3>Intermediate of Science</h3>
-                        <div class="degree">Science Stream</div>
-                        <div class="university">Delhi Jain Public School, New Delhi</div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section id="contact">
-            <div class="container">
-                <div class="section-header reveal">
-                    <div class="section-tag">Let's Connect</div>
-                    <h2>Get In Touch</h2>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="contact-info reveal">
-                        <div class="contact-links" id="contactLinks">
-                            <!-- Dynamic Contact Links -->
-                        </div>
-                    </div>
-
-                    <div class="contact-visual reveal">
-                        <div class="contact-visual-content">
-                            <h3 style="font-family: 'Syne', sans-serif; margin-bottom: 1rem;">Let's Build Together</h3>
-                            <p style="color: var(--text-dim); max-width: 300px; margin: 0 auto;">
-                                Interested in partnerships, integrations, or discussing Web3 opportunities?
-                                Feel free to reach out through any channel.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-                <p>&copy; <span id="footer-year">2026</span> Arpit Singh Rajput. All rights reserved.</p>
-            </div>
-        </footer>
-
-
-        <script>
-            // Create network nodes
-            const networkVisual = document.getElementById('networkVisual');
-            for (let i = 0; i < 15; i++) {
-                const node = document.createElement('div');
-                node.className = 'network-node';
-                node.style.left = Math.random() * 100 + '%';
-                node.style.top = Math.random() * 100 + '%';
-                node.style.animationDelay = Math.random() * 10 + 's';
-                networkVisual.appendChild(node);
-            }
-
-            // Scroll reveal animation
-            function reveal() {
-                const reveals = document.querySelectorAll('.reveal');
-                reveals.forEach(element => {
-                    const windowHeight = window.innerHeight;
-                    const elementTop = element.getBoundingClientRect().top;
-                    const elementVisible = 150;
-
-                    if (elementTop < windowHeight - elementVisible) {
-                        element.classList.add('active');
-                    }
-                });
-            }
-
-            // --- Data Loading & CMS Integration ---
-            document.addEventListener('DOMContentLoaded', async () => {
-                try {
-                    const response = await fetch('data/content.json');
-                    const data = await response.json();
-
-                    // 1. Populate Hero
-                    document.querySelector('[data-cms-hero-name]').innerHTML =
-                        `${data.hero.name_prefix}<br><span class="gradient-text">${data.hero.name_highlight}</span>`;
-
-                    document.querySelector('.hero-tag').textContent = data.hero.tag;
-                    document.querySelector('[data-cms-hero-subtitle]').innerHTML = data.hero.subtitle;
-
-                    document.querySelector('[data-cms-stat-years]').textContent = data.hero.stats.years;
-                    document.querySelector('[data-cms-stat-community]').textContent = data.hero.stats.community;
-                    document.querySelector('[data-cms-stat-projects]').textContent = data.hero.stats.partnerships;
-
-                    // 2. Populate Experience Lists
-                    // Kima Main
-                    const kimaList = document.querySelector('[data-cms-kima-experience]');
-                    if (kimaList && data.experience) {
-                        kimaList.innerHTML = data.experience.kima_bullets
-                            .map(item => `<li>${item}</li>`).join('');
-                    }
-
-                    // Kima Strategic
-                    const stratList = document.querySelector('[data-cms-kima-strategic]');
-                    if (stratList && data.experience && data.experience.kima_strategic_bullets) {
-                        stratList.innerHTML = data.experience.kima_strategic_bullets
-                            .map(item => `<li>${item}</li>`).join('');
-                    }
-
-                    // Additional Experience
-                    const addList = document.querySelector('[data-cms-additional-experience]');
-                    if (addList && data.experience) {
-                        addList.innerHTML = data.experience.additional_bullets
-                            .map(item => `<li>${item}</li>`).join('');
-                    }
-
-                    // MultiFarm
-                    const multifarmList = document.querySelector('[data-cms-multifarm-experience]');
-                    if (multifarmList && data.experience && data.experience.multifarm_bullets) {
-                        multifarmList.innerHTML = data.experience.multifarm_bullets
-                            .map(item => `<li>${item}</li>`).join('');
-                    }
-
-                    // CrowdFund
-                    const crowdfundList = document.querySelector('[data-cms-crowdfund-experience]');
-                    if (crowdfundList && data.experience && data.experience.crowdfund_bullets) {
-                        crowdfundList.innerHTML = data.experience.crowdfund_bullets
-                            .map(item => `<li>${item}</li>`).join('');
-                    }
-
-                    // Mystery
-                    const mysteryList = document.querySelector('[data-cms-mystery-experience]');
-                    if (mysteryList && data.experience && data.experience.mystery_bullets) {
-                        mysteryList.innerHTML = data.experience.mystery_bullets
-                            .map(item => `<li>${item}</li>`).join('');
-                    }
-
-                    // 3. Populate Education Titles
-                    if (data.education) {
-                        document.querySelector('[data-cms-edu-mca]').textContent = data.education.mca;
-                        document.querySelector('[data-cms-edu-bca]').textContent = data.education.bca;
-                    }
-
-                    // 5. Populate Skills
-                    if (data.skills) {
-                        const skillsContainer = document.getElementById('skillsGrid');
-                        skillsContainer.innerHTML = data.skills.map(cat => `
-                            <div class="skill-category reveal">
-                                <h3>${cat.category}</h3>
-                                <div class="skill-tags">
-                                    ${cat.tags.map(tag => `<span class="skill-tag">${tag}</span>`).join('')}
-                                </div>
-                            </div>
-                        `).join('');
-                    }
-
-                    // 6. Populate Hobbies
-                    if (data.hobbies) {
-                        const hobbiesContainer = document.getElementById('hobbiesGrid');
-                        hobbiesContainer.innerHTML = data.hobbies.map(cat => `
-                            <div class="skill-category reveal">
-                                <h3>${cat.category}</h3>
-                                <div class="skill-tags">
-                                    ${cat.tags.map(tag => `<span class="skill-tag">${tag}</span>`).join('')}
-                                </div>
-                            </div>
-                        `).join('');
-                    }
-
-                    // 7. Populate Social Links
-                    if (data.social_links) {
-                        const s = data.social_links;
-                        const contactContainer = document.getElementById('contactLinks');
-                        contactContainer.innerHTML = `
-                            <a href="mailto:${s.email}" class="contact-link">
-                                <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                                <div class="contact-text">
-                                    <div class="contact-label">Email</div>
-                                    <div class="contact-value">${s.email}</div>
-                                </div>
-                            </a>
-                            <a href="${s.linkedin.url}" target="_blank" class="contact-link">
-                                <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                                <div class="contact-text">
-                                    <div class="contact-label">LinkedIn</div>
-                                    <div class="contact-value">${s.linkedin.text}</div>
-                                </div>
-                            </a>
-                            <a href="https://wa.me/${s.whatsapp.replace(/\D/g, '')}" target="_blank" class="contact-link">
-                                <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M16.6 14.2c-.3-.1-1.8-.9-2.1-1s-.5-.1-.7.1-.8 1-.9 1.1-.3.2-.6.1a7.5 7.5 0 0 1-2.2-1.4 8.3 8.3 0 0 1-1.5-1.9c-.2-.3 0-.5.1-.6s.3-.3.4-.5.2-.3.3-.5.1-.3 0-.5-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3s-1 1-1 2.4 1 2.8 1.1 3 .3.4 2.1 3.2a12 12 0 0 0 4.6 4.2c1.7.7 2 .5 2.4.5s1.5-.6 1.7-1.2.2-1.1.1-1.2-.2-.2-.5-.3z"/></svg>
-                                <div class="contact-text">
-                                    <div class="contact-label">WhatsApp</div>
-                                    <div class="contact-value">${s.whatsapp}</div>
-                                </div>
-                            </a>
-                            <a href="https://t.me/${s.telegram.replace('@', '')}" target="_blank" class="contact-link">
-                                <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
-                                <div class="contact-text">
-                                    <div class="contact-label">Telegram</div>
-                                    <div class="contact-value">${s.telegram}</div>
-                                </div>
-                            </a>
-                             <div class="contact-link" style="pointer-events: none;">
-                                <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                                <div class="contact-text">
-                                    <div class="contact-label">Location</div>
-                                    <div class="contact-value">${s.location}</div>
-                                </div>
-                            </div>
-                        `;
-                    }
-
-                } catch (error) {
-                    console.error('Error loading site content:', error);
-                }
-            });
-
-            // Mobile navigation
-            const navToggle = document.querySelector('.nav-toggle');
-            const siteNav = document.getElementById('site-nav');
-            if (navToggle && siteNav) {
-                const setNav = (open) => {
-                    siteNav.classList.toggle('open', open);
-                    navToggle.setAttribute('aria-expanded', String(open));
-                    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-                };
-                navToggle.addEventListener('click', () => {
-                    setNav(navToggle.getAttribute('aria-expanded') !== 'true');
-                });
-                siteNav.addEventListener('click', (e) => {
-                    if (e.target.tagName === 'A') setNav(false);
-                });
-                document.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape') setNav(false);
-                });
-            }
-
-            // Keep the footer copyright current
-            const yearEl = document.getElementById('footer-year');
-            if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-            window.addEventListener('scroll', reveal, { passive: true });
-            reveal(); // Check on load
-
-            // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('nav a');
-
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach(section => {
-                    // getBoundingClientRect is relative to the viewport, so it stays
-                    // correct regardless of how the sections are nested.
-                    const sectionTop = section.getBoundingClientRect().top + window.scrollY - 120;
-                    if (window.scrollY >= sectionTop) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${current}`) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-            const progressBar = document.getElementById('scroll-progress');
-            window.addEventListener('scroll', () => {
-                if (!progressBar) return;
-                const scrollTop = document.documentElement.scrollTop;
-                const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
-                progressBar.style.width = progress + '%';
-            }, { passive: true });
-        </script>
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const badge = document.querySelector(".promotion-badge");
-                if (!badge) return;
-
-                const observer = new IntersectionObserver(
-                    ([entry]) => {
-                        if (entry.isIntersecting) {
-                            badge.classList.add("visible");
-                            observer.disconnect();
-                        }
-                    },
-                    { threshold: 0.6 }
-                );
-
-                observer.observe(badge);
-            });
-        </script>
-
+    </main>
 </body>
 
 </html>
