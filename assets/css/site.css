@@ -343,11 +343,6 @@ a[aria-current='true'],
   bottom: 0;
   width: 73.5%;
   max-width: none;
-  filter: grayscale(1);
-  transition: filter 0.5s var(--ease-soft, ease);
-}
-.portrait img:hover {
-  filter: grayscale(0);
 }
 
 .hero__id { display: flex; flex-direction: column; gap: 10px; }
