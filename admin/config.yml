@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: contentstudio1235-spec/arpit-portfolio-site
+  repo: arpitcoding007-star/Arpit-sProfile
   branch: main
   base_url: "https://arpitsinghrajput.com"
   auth_endpoint: "api/auth"
