@@ -80,7 +80,8 @@ const activeObserver = new IntersectionObserver(
 
 /* ---------- Scroll-driven: header state and disc parallax ---------- */
 
-const discs = [...document.querySelectorAll('.stage > .disc, .hero__visual > .disc')];
+// The hero's offset goes on its wrapper so the portrait's clip mask follows the disc.
+const discs = [...document.querySelectorAll('.stage > .disc, .hero__visual')];
 let ticking = false;
 
 function onFrame() {

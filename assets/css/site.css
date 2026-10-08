@@ -339,9 +339,9 @@ a[aria-current='true'],
 }
 .portrait img {
   position: absolute;
-  left: 3.6%;
+  left: 12%;
   bottom: 0;
-  width: 73.5%;
+  width: 88%;
   max-width: none;
 }
 
@@ -640,8 +640,14 @@ a[aria-current='true'],
     left: calc(830 * var(--u) - 0.632 * var(--pw));
     width: var(--pw);
     height: var(--ph);
-    -webkit-mask: none;
-    mask: none;
+    /* Free above the disc's centre line, clipped to its curve below, so the photo's crop edges never show. */
+    --mr: calc(var(--d) * var(--s) / 2);
+    --mx: calc((var(--cx) - 830) * var(--u) + 0.632 * var(--pw));
+    --my: calc(var(--cy) * var(--v) + var(--py, 0px) - 900 * var(--v) + var(--ph));
+    -webkit-mask: radial-gradient(circle var(--mr) at var(--mx) var(--my), #000 calc(var(--mr) - 1px), transparent var(--mr)),
+      linear-gradient(#000 0 0) top / 100% var(--my) no-repeat;
+    mask: radial-gradient(circle var(--mr) at var(--mx) var(--my), #000 calc(var(--mr) - 1px), transparent var(--mr)),
+      linear-gradient(#000 0 0) top / 100% var(--my) no-repeat;
   }
   .portrait img { position: static; width: 100%; }
   .hero__name { font-size: calc(40 * var(--t)); letter-spacing: 0.12em; line-height: 1; }
