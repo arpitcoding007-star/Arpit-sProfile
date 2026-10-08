@@ -1,5 +1,6 @@
 {
   "name": "arpit-portfolio-site",
+  "version": "1.1.0",
   "private": true,
   "description": "Portfolio of Arpit Singh Rajput. Static site, pre-rendered from data/content.json.",
   "scripts": {
