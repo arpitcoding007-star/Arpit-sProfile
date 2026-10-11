@@ -632,18 +632,19 @@ a[aria-current='true'],
   .hero__visual { display: contents; }
   .hero__visual .disc { inset: auto; left: calc(var(--cx) * var(--u)); top: calc(var(--cy) * var(--v)); width: calc(var(--d) * var(--s)); }
   .portrait {
-    --ph: calc(510 * var(--v) + 190 * var(--s));
+    /* Sized and placed from the disc's own geometry, so the photo stays seated in it wherever the disc sits. */
+    --mr: calc(var(--d) * var(--s) / 2);
+    --ph: calc(1.667 * var(--mr));
     --pw: calc(0.7496 * var(--ph));
-    top: auto;
+    --mx: calc(0.632 * var(--pw) - 0.405 * var(--mr));
+    --my: calc(var(--ph) - 1.143 * var(--mr));
     right: auto;
-    bottom: 0;
-    left: calc(830 * var(--u) - 0.632 * var(--pw));
+    bottom: auto;
+    left: calc(var(--cx) * var(--u) - var(--mx));
+    top: calc(var(--cy) * var(--v) + var(--py, 0px) - var(--my));
     width: var(--pw);
     height: var(--ph);
     /* Free above the disc's centre line, clipped to its curve below, so the photo's crop edges never show. */
-    --mr: calc(var(--d) * var(--s) / 2);
-    --mx: calc((var(--cx) - 830) * var(--u) + 0.632 * var(--pw));
-    --my: calc(var(--cy) * var(--v) + var(--py, 0px) - 900 * var(--v) + var(--ph));
     -webkit-mask: radial-gradient(circle var(--mr) at var(--mx) var(--my), #000 calc(var(--mr) - 1px), transparent var(--mr)),
       linear-gradient(#000 0 0) top / 100% var(--my) no-repeat;
     mask: radial-gradient(circle var(--mr) at var(--mx) var(--my), #000 calc(var(--mr) - 1px), transparent var(--mr)),
