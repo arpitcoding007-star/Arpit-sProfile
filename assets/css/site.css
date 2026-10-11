@@ -634,10 +634,10 @@ a[aria-current='true'],
   .portrait {
     /* Sized and placed from the disc's own geometry, so the photo stays seated in it wherever the disc sits. */
     --mr: calc(var(--d) * var(--s) / 2);
-    --ph: calc(1.667 * var(--mr));
+    --ph: calc(1.3 * 1.667 * var(--mr));
     --pw: calc(0.7496 * var(--ph));
     --mx: calc(0.632 * var(--pw) - 0.405 * var(--mr));
-    --my: calc(var(--ph) - 1.143 * var(--mr));
+    --my: calc(0.524 * var(--mr));
     right: auto;
     bottom: auto;
     left: calc(var(--cx) * var(--u) - var(--mx));
